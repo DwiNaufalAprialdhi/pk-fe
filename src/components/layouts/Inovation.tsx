@@ -13,7 +13,7 @@ export default function Inovation() {
                         <section className='container_section flex flex-col gap-y-[14px]'>
                               <div data-aos='fade-up' className='flex items-center justify-between'>
                                     <h2 className='font-quicksand font-bold lg:text-[24px] text-base lg:leading-[30px] leading-normal w-full lg:max-w-[70%] max-w-[80%]'>Inovasi Digital dalam Setiap Proyek</h2>
-                                    <Link href='/' className='font-normal lg:text-base text-[10px] text-slate-400 hover:underline'>
+                                    <Link href='/' className='font-normal lg:text-base text-[8px] text-slate-400 hover:underline'>
                                           Lihat Semua
                                     </Link>
                               </div>
@@ -25,13 +25,14 @@ export default function Inovation() {
                                                 pagination={{
                                                       clickable: true,
                                                 }}
+                                                loop={true}
                                                 breakpoints={{
                                                       0: {
-                                                            slidesPerView: 1,
+                                                            slidesPerView: 1.1,
                                                             spaceBetween: 10,
                                                       },
                                                       320: {
-                                                            slidesPerView: 1,
+                                                            slidesPerView: 1.1,
                                                             spaceBetween: 10,
                                                       },
                                                       640: {

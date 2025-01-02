@@ -19,7 +19,7 @@ export default function CardInovation(props: LinkProps) {
       return (
             <>
                   <Link href={props.link} className='col-span-1 block w-full h-auto rounded-[16px] overflow-hidden shadow-sm md:hover:-translate-y-1 duration-300 border border-slate-200/30 group'>
-                        <div className='w-full lg:h-[200px] h-[110px] rounded-t-[16px]'>
+                        <div className='w-full lg:h-[200px] h-[190px] rounded-t-[16px]'>
                               <Image src={props.image} alt='discover' width={360} height={200} className='w-full h-full object-cover' />
                         </div>
                         <div className='w-full bg-white pt-6 pb-4 px-[10px] flex flex-col gap-y-[8px]'>
