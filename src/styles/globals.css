@@ -165,3 +165,41 @@
     transition: all 0.3s ease;
   }
 }
+
+.packet-swiper .swiper-pagination-bullet {
+  background-color: #94a3b8; /* Warna default */
+  width: 30px;
+  height: 6px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.packet-swiper .swiper-pagination-bullet-active {
+  background-color: #fff; /* Warna saat aktif */
+  width: 60px;
+  height: 6px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .packet-swiper .swiper-pagination-bullet {
+    background-color: #94a3b8; /* Warna default */
+    width: 10px;
+    height: 5px;
+    border-radius: 20px;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  .packet-swiper .swiper-pagination-bullet-active {
+    background-color: #fff; /* Warna saat aktif */
+    width: 30px;
+    height: 5px;
+    border-radius: 20px;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
