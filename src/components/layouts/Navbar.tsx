@@ -155,10 +155,10 @@ export default function Navbar() {
                                                 </Link>
                                           </div>
                                           <div className='flex items-center'>
-                                                <Link href='#' className='py-[10px] px-[20px] flex items-center justify-center text-center font-semibold text-sm text-slate-50 hover:underline'>
+                                                <Link href='/auth/login' className='py-[10px] px-[20px] flex items-center justify-center text-center font-semibold text-sm text-slate-50 hover:underline'>
                                                       Masuk
                                                 </Link>
-                                                <Link href={'#'} className='w-max h-max'>
+                                                <Link href={'/auth/registration'} className='w-max h-max'>
                                                       <Button type={'button'} >
                                                             Daftar
                                                       </Button>
@@ -300,10 +300,10 @@ export default function Navbar() {
                                           </div>
                                           <div className='flex flex-col gap-y-[2px]'>
                                                 <h2 className='font-medium text-base text-slate-50'>Belum Punya Akun?</h2>
-                                                <Link href='#' className='font-normal text-sm text-slate-50 underline'>Daftar Sekarang</Link>
+                                                <Link href='/auth/registration' className='font-normal text-sm text-slate-50 underline'>Daftar Sekarang</Link>
                                           </div>
                                     </div>
-                                    <Link href='#' className='w-max h-max'>
+                                    <Link href='/auth/login' className='w-max h-max'>
                                           <Button type={'button'} >
                                                 Login
                                           </Button>
