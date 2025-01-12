@@ -8,7 +8,7 @@ export default function Footer() {
             <>
                   <main className="w-full hidden lg:block h-auto overflow-x-hidden py-[50px]">
                         <section className="container_section grid grid-cols-5">
-                              <div data-aos="fade-left" className="col-span-1 flex flex-col">
+                              <div data-aos="fade-up" className="col-span-1 flex flex-col">
                                     <Link href="#" className="block mb-6">
                                           <Image
                                                 src="/assets/logo/logo-pk2.svg"
@@ -33,7 +33,7 @@ export default function Footer() {
                                           </Link>
                                     </div>
                               </div>
-                              <div data-aos="fade-left" className="col-span-1 flex flex-col gap-y-[14px]">
+                              <div data-aos="fade-up" className="col-span-1 flex flex-col gap-y-[14px]">
                                     <h2 className='font-medium text-base'>Kategori</h2>
                                     <Link href="#" className="block">
                                           <h2 className='font-normal text-sm'>Desain Grafis & Branding</h2>
@@ -54,7 +54,7 @@ export default function Footer() {
                                           <h2 className='font-normal text-sm'>3D Desainer</h2>
                                     </Link>
                               </div>
-                              <div data-aos="fade-left" className="col-span-1 flex flex-col gap-y-[14px]">
+                              <div data-aos="fade-up" className="col-span-1 flex flex-col gap-y-[14px]">
                                     <h2 className='font-medium text-base'>Support</h2>
                                     <Link href="#" className="block">
                                           <h2 className='font-normal text-sm'>Customer Service</h2>
@@ -66,7 +66,7 @@ export default function Footer() {
                                           <h2 className='font-normal text-sm'>FAQ</h2>
                                     </Link>
                               </div>
-                              <div data-aos="fade-left" className="col-span-1 flex flex-col gap-y-[14px]">
+                              <div data-aos="fade-up" className="col-span-1 flex flex-col gap-y-[14px]">
                                     <h2 className='font-medium text-base'>Tentang Partnerkerja.id</h2>
                                     <Link href="#" className="block">
                                           <h2 className='font-normal text-sm'>Tentang Kami</h2>
@@ -78,7 +78,7 @@ export default function Footer() {
                                           <h2 className='font-normal text-sm'>Testimonials</h2>
                                     </Link>
                               </div>
-                              <div data-aos="fade-left" className="col-span-1">
+                              <div data-aos="fade-up" className="col-span-1">
                               </div>
                               <div className="col-span-5 mt-[50px]">
                                     <h2 className='font-normal text-sm text-slate-400'>© Partnerkerja.id 2024, all rights reserved </h2>

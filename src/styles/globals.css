@@ -24,6 +24,18 @@
   .container_section {
     @apply w-full h-auto lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto lg:px-0 px-5;
   }
+  .container_section_2 {
+    @apply w-full h-auto lg:max-w-[775px] md:max-w-[696px] max-w-none mx-auto lg:px-0 px-5;
+  }
+  .transition_menu {
+    @apply transition-all duration-300 ease-in-out transform;
+  }
+  .bradcrumbs_text {
+    @apply block font-normal lg:text-sm text-[10px] text-slate-400 hover:text-text-dark transition_menu;
+  }
+  .bradcrumbs_text_active {
+    @apply block font-normal lg:text-sm text-[10px] text-slate-800;
+  }
 }
 
 /* Animation keyframes ============================================= */
@@ -196,6 +208,47 @@
 
   .packet-swiper .swiper-pagination-bullet-active {
     background-color: #fff; /* Warna saat aktif */
+    width: 30px;
+    height: 5px;
+    border-radius: 20px;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+}
+
+.category-branding-swiper {
+  padding-bottom: 40px !important;
+}
+.category-branding-swiper .swiper-pagination-bullet {
+  background-color: #e5e5e5; /* Warna default */
+  width: 30px;
+  height: 6px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.category-branding-swiper .swiper-pagination-bullet-active {
+  background-color: #0a66c2; /* Warna saat aktif */
+  width: 60px;
+  height: 6px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .category-branding-swiper .swiper-pagination-bullet {
+    background-color: #e5e5e5; /* Warna default */
+    width: 10px;
+    height: 5px;
+    border-radius: 20px;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  .category-branding-swiper .swiper-pagination-bullet-active {
+    background-color: #0a66c2; /* Warna saat aktif */
     width: 30px;
     height: 5px;
     border-radius: 20px;

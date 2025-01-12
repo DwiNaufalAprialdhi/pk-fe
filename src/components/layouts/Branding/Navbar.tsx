@@ -1,13 +1,13 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable react-hooks/exhaustive-deps */
+import Icon from '@/components/Icon/Icon';
+import Button from '@/components/material/Button';
+import ButtonBranding from '@/components/material/ButtonBranding';
+import InputSearchBranding from '@/components/material/InputSearchBranding';
+import InputSearchMobile from '@/components/material/InputSearchMobile';
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect, useRef, useState } from 'react'
-import InputSearch from '../material/InputSearch'
-import Icon from '../Icon/Icon'
-import Button from '../material/Button'
-import InputSearchMobile from '../material/InputSearchMobile'
-
 export default function Navbar() {
 
       // State Modal Telusuri Jasa ============================================================ //
@@ -94,17 +94,17 @@ export default function Navbar() {
 
       return (
             <>
-                  <nav className='fixed top-0 inset-x-0 w-full lg:bg-theme-secondary_blue bg-theme-primary_blue z-40 transition-all duration-300 transform ease-in-out'>
+                  <nav className='fixed top-0 inset-x-0 w-full lg:bg-white bg-theme-primary_blue z-40 transition-all duration-300 transform ease-in-out'>
                         {/* Navbar Desktop */}
                         <section className='hidden lg:block w-full h-auto py-[15px] px-5 md:px-0 lg:max-w-[1200px] md:max-w-[696px] max-w-none mx-auto'>
                               <div className='w-full flex items-center justify-between'>
                                     {/* ================== Kondisi Belum Login ==================  */}
                                     {/* Left */}
                                     <div className='w-full max-w-[50%] flex items-center gap-x-6'>
-                                          <Link href='/' className='block w-max h-max'>
-                                                <Image src='/assets/logo/logo-pk.svg' alt='logo' width={150} height={25} className='min-w-[150px] h-auto object-cover' />
+                                          <Link href='/branding' className='block w-max h-max'>
+                                                <Image src='/assets/logo/logo-pk-primary.svg' alt='logo' width={150} height={25} className='min-w-[150px] h-auto object-cover' />
                                           </Link>
-                                          <InputSearch
+                                          <InputSearchBranding
                                                 name={'search'}
                                                 id={'search'}
                                                 placeholder={'Cari Jasa...'}
@@ -118,8 +118,10 @@ export default function Navbar() {
                                                       onClick={() => handleIsModal()}
                                                       ref={elementRef}
                                                 >
-                                                      <h2 className='font-normal text-sm leading-[16px] text-slate-50'>Telusuri Jasa</h2>
-                                                      <Icon.arrowDown className={`${isModalOpen ? 'rotate-180' : ''} w-[16px] h-[16px] text-white transition-all duration-300`} />
+                                                      <h2 className='font-normal text-sm leading-[16px] text-text-dark'>
+                                                            Telusuri Jasa
+                                                      </h2>
+                                                      <Icon.arrowDown className={`${isModalOpen ? 'rotate-180' : ''} w-[16px] h-[16px] text-text-dark transition-all duration-300`} />
                                                       <div
                                                             ref={modalRef}
                                                             className={`absolute top-[50px] border border-slate-400/10 left-0 w-[410px] rounded-[8px] bg-white shadow-lg z-50 ${isModalStyle} ${isModalOpen || isAnimating ? 'block' : 'hidden'}`}
@@ -148,18 +150,18 @@ export default function Navbar() {
                                                             </ul>
                                                       </div>
                                                 </div>
-                                                <Link href='#' className='font-normal text-sm leading-[16px] text-slate-50'>
+                                                <Link href='#' className='font-normal text-sm leading-[16px]'>
                                                       Tentang Kami
                                                 </Link>
                                           </div>
                                           <div className='flex items-center'>
-                                                <Link href='/auth/login' className='py-[10px] px-[20px] flex items-center justify-center text-center font-semibold text-sm text-slate-50 hover:underline'>
+                                                <Link href='/auth/login' className='py-[10px] px-[20px] flex items-center justify-center text-center font-semibold text-sm hover:underline'>
                                                       Masuk
                                                 </Link>
                                                 <Link href={'/auth/registration'} className='w-max h-max'>
-                                                      <Button type={'button'} >
+                                                      <ButtonBranding type={'button'} >
                                                             Daftar
-                                                      </Button>
+                                                      </ButtonBranding>
                                                 </Link>
                                           </div>
                                     </div>
@@ -168,32 +170,32 @@ export default function Navbar() {
                                     {/* ================== Kondisi Sudah Login ==================  */}
                                     {/* Left */}
                                     {/* <div className='w-full max-w-[50%] flex items-center gap-x-6'>
-                                          <Link href='/' className='block w-max h-max'>
-                                                <Image src='/assets/logo/logo-pk.svg' alt='logo' width={150} height={25} className='min-w-[150px] h-auto object-cover' />
+                                          <Link href='/branding' className='block w-max h-max'>
+                                                <Image src='/assets/logo/logo-pk-primary.svg' alt='logo' width={150} height={25} className='min-w-[150px] h-auto object-cover' />
                                           </Link>
                                           <div onClick={handleIsSearchActive} className='cursor-pointer'>
                                                 {!isSearchActive ?
                                                       <>
-                                                            < Icon.search className='w-4 h-4 text-white' />
+                                                            < Icon.search className='w-4 h-4 text-text-dark' />
                                                       </>
                                                       :
                                                       <>
-                                                            < Icon.close className='w-4 h-4 text-white' />
+                                                            < Icon.close className='w-4 h-4 text-text-dark' />
                                                       </>
                                                 }
                                           </div>
                                           <div className={`${isSearchActive ? 'block' : 'hidden'} ${isSearchStyle} w-full`}>
-                                                <InputSearch
+                                                <InputSearchBranding
                                                       name={'search'}
                                                       id={'search'}
                                                       placeholder={'Cari Jasa...'}
                                                 />
                                           </div>
                                           <div className={`${isSearchActive ? 'hidden' : 'flex'}  items-center gap-x-[18px]`}>
-                                                <Link href='#' className='font-normal text-sm leading-[16px] text-slate-50'>
+                                                <Link href='#' className='font-normal text-sm leading-[16px]'>
                                                       Dashboard
                                                 </Link>
-                                                <Link href='#' className='font-normal text-sm leading-[16px] text-slate-50'>
+                                                <Link href='#' className='font-normal text-sm leading-[16px]'>
                                                       Laporan Transaksi
                                                 </Link>
                                                 <div
@@ -201,7 +203,7 @@ export default function Navbar() {
                                                       onClick={() => handleIsModal()}
                                                       ref={elementRef}
                                                 >
-                                                      <h2 className='font-normal text-sm leading-[16px] text-slate-50'>Telusuri Jasa</h2>
+                                                      <h2 className='font-normal text-sm leading-[16px]'>Telusuri Jasa</h2>
                                                       <Icon.arrowDown className={`${isModalOpen ? 'rotate-180' : ''} w-[16px] h-[16px] text-white transition-all duration-300`} />
                                                       <div
                                                             ref={modalRef}
@@ -237,19 +239,19 @@ export default function Navbar() {
                                     {/* <div className='w-full max-w-[50%] flex items-center justify-end gap-x-[50px]'>
                                           <div className='flex items-center gap-x-[32px]'>
                                                 <Link href='#'>
-                                                      <Icon.notification className='w-6 h-6 text-white' />
+                                                      <Icon.notification className='w-6 h-6 text-text-dark' />
                                                 </Link>
                                                 <Link href='#'>
-                                                      <Icon.mail className='w-6 h-6 text-white' />
+                                                      <Icon.mail className='w-6 h-6 text-text-dark' />
                                                 </Link>
                                           </div>
                                           <div className='flex items-center gap-x-2'>
                                                 <div className='flex flex-col items-end justify-end'>
-                                                      <h2 className='font-normal text-xs text-slate-50'>Dwi Naufal Aprialdhi</h2>
-                                                      <h2 className='font-normal text-xs text-slate-50'>Client</h2>
+                                                      <h2 className='font-normal text-xs'>Dwi Naufal Aprialdhi</h2>
+                                                      <h2 className='font-normal text-xs'>Client</h2>
                                                 </div>
                                                 <div className='w-[48px] h-[48px] rounded-full overflow-hidden'>
-                                                      <Image src='/assets/images/profile.svg' alt='avatar' width={48} height={48} className='w-full h-full object-cover' />
+                                                      <Image src='/assets/images/pay.jpg' alt='avatar' width={48} height={48} className='w-full h-full object-cover' />
                                                 </div>
                                           </div>
                                     </div> */}
@@ -262,7 +264,7 @@ export default function Navbar() {
                                     <div onClick={toggleOverlay} className='cursor-pointer'>
                                           <Icon.hamburger className='w-5 h-5 text-white' />
                                     </div>
-                                    <Link href='/' className='block w-auto h-auto'>
+                                    <Link href='/branding' className='block w-auto h-auto'>
                                           <Image src='/assets/logo/logo-pk.svg' alt='logo' width={150} height={25} className='min-w-[150px] h-auto object-cover' />
                                     </Link>
                                     <div onClick={() => handleSearchMobile()} className='cursor-pointer'>
