@@ -15,11 +15,11 @@ export default function Hero() {
                                           Beranda
                                     </Link>
                                     <Icon.arrowDown className="w-5 h-5 text-slate-400 -rotate-90" />
-                                    <Link href='/' className="bradcrumbs_text">
+                                    <Link href='/branding' className="bradcrumbs_text">
                                           Semua Kategori
                                     </Link>
                                     <Icon.arrowDown className="w-5 h-5 text-slate-400 -rotate-90" />
-                                    <Link href='/' className="bradcrumbs_text_active">
+                                    <Link href='/branding' className="bradcrumbs_text_active">
                                           Desain Grafis & Branding
                                     </Link>
                               </div>

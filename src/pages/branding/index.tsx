@@ -6,6 +6,7 @@ import Packet from '@/components/layouts/Branding/Packet'
 import Faq from '@/components/layouts/Faq'
 import Footer from '@/components/layouts/Footer'
 import Head from 'next/head'
+import Image from 'next/image'
 import React from 'react'
 
 export default function index() {
@@ -15,12 +16,25 @@ export default function index() {
                         <title>Desain Grafis & Branding - Partner Kerja.id</title>
                   </Head>
                   <Navbar />
-                  <Hero />
-                  <Category />
-                  <Packet />
-                  <Faq />
-                  <Banner />
-                  <Footer />
+                  <div className='w-full h-auto relative'>
+                        {/* Ornament */}
+                        <div className='absolute w-full h-full top-0 inset-x-0 z-[1] overflow-hidden pointer-events-none'>
+                              <Image
+                                    src="/assets/images/paper-clip.png"
+                                    alt="Ornament"
+                                    width={600} height={1000}
+                                    className='w-full h-full object-cover'
+                              />
+                        </div>
+                        <div className='w-full h-auto relative z-[2]'>
+                              <Hero />
+                              <Category />
+                              <Packet />
+                              <Faq />
+                              <Banner />
+                              <Footer />
+                        </div>
+                  </div>
             </>
       )
 }

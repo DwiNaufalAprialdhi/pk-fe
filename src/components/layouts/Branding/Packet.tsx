@@ -32,12 +32,12 @@ export default function Packet() {
                                           <h2 className='font-normal lg:text-[24px] text-sm'>average rating</h2>
                                     </div>
                                     <div className='items-center grid grid-cols-2 gap-x-[14px]'>
-                                          <Link href='#' className="w-full col-span-1 block">
+                                          <Link href='/branding/aio' className="w-full col-span-1 block">
                                                 <ButtonPrimary>
                                                       Pilih Paket
                                                 </ButtonPrimary>
                                           </Link>
-                                          <Link href='#' className="w-full col-span-1 block">
+                                          <Link href='/branding/aio' className="w-full col-span-1 block">
                                                 <button type='button' className='w-full p-[15px] flex items-center justify-center bg-transparent gap-2 text-theme-primary_blue font-normal lg:text-sm text-xs rounded-[8px] hover:bg-opacity-80 duration-300 group'>
                                                       Lihat Paket Lainnya
                                                       <Icon.arrowRight className='w-[24px] h-[24px] group-hover:-translate-x-1 transition_menu 1ext-theme-primary_blue' />

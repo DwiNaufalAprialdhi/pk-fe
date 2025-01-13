@@ -73,7 +73,7 @@ export default function Faq() {
                   </main>
 
                   {/* Toast Notification */}
-                  <div className={`${showToast ? 'block' : 'hidden'} fixed bottom-5 right-5 bg-theme-primary_blue text-white px-4 py-2 rounded-lg shadow-lg lg:text-sm text-xs font-bold font-quicksand toLeft`}>
+                  <div className={`${showToast ? 'block' : 'hidden'} fixed bottom-5 right-5 bg-theme-primary_blue text-white px-4 py-2 rounded-lg shadow-lg lg:text-sm text-xs font-bold font-quicksand toLeft z-[99]`}>
                         Email berhasil disalin ke clipboard!
                   </div>
             </>

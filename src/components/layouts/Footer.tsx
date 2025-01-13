@@ -6,7 +6,7 @@ import Icon from "../Icon/Icon";
 export default function Footer() {
       return (
             <>
-                  <main className="w-full hidden lg:block h-auto overflow-x-hidden py-[50px]">
+                  <main className="w-full hidden lg:block h-auto bg-transparent overflow-x-hidden py-[50px]">
                         <section className="container_section grid grid-cols-5">
                               <div data-aos="fade-up" className="col-span-1 flex flex-col">
                                     <Link href="#" className="block mb-6">

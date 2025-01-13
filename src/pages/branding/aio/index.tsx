@@ -6,9 +6,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React, { useEffect } from 'react'
 import AOS from 'aos';
-import TabBranding from '@/components/layouts/Branding/TabBranding'
 import Review from '@/components/layouts/Branding/Review'
 import CategoryMore from '@/components/layouts/Branding/CategoryMore'
+import TabAio from '@/components/layouts/Branding/TabAio'
 
 
 export default function Index() {
@@ -21,10 +21,10 @@ export default function Index() {
       return (
             <>
                   <Head>
-                        <title>Brand Guidlines - Partner Kerja.id</title>
+                        <title>All-in-One - Partner Kerja.id</title>
                   </Head>
                   <Navbar />
-                  <main className='w-full lg:pt-[120px] pt-[90px] bg-transparent lg:pb-[0px] pb-[0px] min-h-screen overflow-hidden relative'>
+                  <main className='w-full lg:pt-[120px] pt-[90px] lg:pb-[0px] pb-[0px] min-h-screen overflow-hidden relative'>
                         {/* Ornament */}
                         <div className='absolute w-full h-full top-0 inset-x-0 z-[1] overflow-hidden pointer-events-none'>
                               <Image
@@ -50,8 +50,8 @@ export default function Index() {
                                           Desain Grafis & Branding
                                     </Link>
                                     <Icon.arrowDown className="w-5 h-5 text-slate-400 -rotate-90" />
-                                    <Link href='/branding/1' className="bradcrumbs_text_active">
-                                          Brand Guidlines
+                                    <Link href='/branding/aio' className="bradcrumbs_text_active">
+                                          All-in-One
                                     </Link>
                               </div>
                         </section>
@@ -69,7 +69,7 @@ export default function Index() {
                               {/* Name, Rating, Description */}
                               <div data-aos='fade-up' className="w-full flex flex-col items justify-center">
                                     <h2 className="font-quicksand font-bold lg:text-[32px] text-[24px] text-center lg:leading-[40px] leading-normal text-slate-800 mb-[14px]">
-                                          Brand Guidlines
+                                          Paket All-in-One
                                     </h2>
                                     <div className="w-max h-auto mx-auto flex items-center mb-6">
                                           <div className="flex items-center gap-x-2 border-r border-slate-400 pr-[14px]">
@@ -84,11 +84,11 @@ export default function Index() {
                                           </div>
                                     </div>
                                     <p className="font-normal lg:text-base text-sm text-center text-slate-400 mb-6">
-                                          Kami membantu menciptakan pedoman lengkap yang memastikan setiap elemen brand Anda tetap selaras.
+                                          Produk layanan ini meliputi pembuatan logo, kartu nama, landingpage dll sesuai dengan kebutuhan
                                     </p>
                               </div>
                               {/* Tab Content in Box */}
-                              <TabBranding />
+                              <TabAio />
                               {/* Penilaian Produk */}
                               <Review />
                               {/* Produk Jasa Lainnya */}

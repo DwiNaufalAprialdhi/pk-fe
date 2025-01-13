@@ -126,7 +126,7 @@ export default function Navbar() {
                                                       >
                                                             <ul className='p-[10px]'>
                                                                   <li className='p-2 hover:bg-slate-100 cursor-pointer rounded-[8px]'>
-                                                                        <Link href={'#'} className='font-normal text-sm leading-[16px]'>
+                                                                        <Link href={'/branding'} className='font-normal text-sm leading-[16px]'>
                                                                               Desain Grafis & Branding
                                                                         </Link>
                                                                   </li>
@@ -314,7 +314,7 @@ export default function Navbar() {
                                     <h2 className='font-medium text-base text-slate-50'>Telusuri Jasa</h2>
                                     <ul className='w-full h-0 py-0 peer-checked:pt-[14px] peer-checked:h-auto overflow-hidden transition-all duration-300 ease-in-out flex flex-col gap-y-[14px]'>
                                           <li>
-                                                <Link href='#' className='font-medium text-base text-slate-50'>
+                                                <Link href='/branding' className='font-medium text-base text-slate-50'>
                                                       Desain Grafis & Branding
                                                 </Link>
                                           </li>
